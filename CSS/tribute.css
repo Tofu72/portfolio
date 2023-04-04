@@ -1,0 +1,275 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  font-family: "Barlow", sans-serif;
+}
+.first-page {
+  background-image: url(/portfolio/photos/home.tribute.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  filter: brightness(90%);
+}
+/******************NAVIGATION BAR*************************/
+nav ul {
+  display: flex;
+  justify-content: right;
+}
+nav ul li {
+  display: block;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: red;
+}
+/******************FIRST CONTAINERRR **********************/
+.first-container {
+  display: block;
+  text-align: center;
+  padding-top: 45vh;
+}
+.first-container p {
+  font-size: 28;
+  font-weight: 400px;
+  color: white;
+  font-family: "PT Serif", serif;
+}
+.first-container h1 {
+  font-size: 63px;
+  color: white;
+  font-family: "PT Serif", serif;
+}
+.first-container ul {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+.first-container ul li {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 400px;
+  padding-right: 10px;
+  color: white;
+  font-family: "PT Serif", serif;
+}
+hr {
+  margin-right: 10px;
+}
+.first-container button {
+  margin-top: 120px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+}
+.first-container button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.first-container button i {
+  padding-left: 8px;
+  color: white;
+}
+/*****************************BIOGRAPHY SECTIONNNN*******************************/
+.second-container {
+  background-color: #f7efe5;
+  height: 105vh;
+}
+.description {
+  padding-top: 80px;
+  margin: 0px 170px;
+  text-align: justify;
+}
+.description h2 {
+  font-family: "PT Serif", serif;
+  font-size: 40px;
+  text-decoration: underline;
+  padding-bottom: 30px;
+}
+.description h4 {
+  font-size: 30px;
+  font-family: "PT Serif", serif;
+}
+.description p {
+  font-size: 20px;
+  line-height: 0.5in;
+  text-indent: 5%;
+}
+/*****************************ACCOLADES SECTIONNNN*******************************/
+.third-container {
+  background-image: url(/portfolio/photos/accolades.png);
+  background-size: contain;
+  height: 180vh;
+  background-repeat: no-repeat;
+}
+.accolades {
+  margin: 0 200px;
+}
+.accolades h2 {
+  font-size: 80px;
+  font-family: "PT Serif", serif;
+  padding-top: 190px;
+  margin-bottom: 70px;
+  color: #2e3840;
+  text-decoration: underline;
+}
+
+.accolade-contents {
+  width: 1000px;
+  margin: 0px auto;
+}
+.accolade-contents p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 0.4in;
+}
+.accolade-contents span {
+  font-weight: bold;
+}
+.accolades hr {
+  width: 95%;
+  margin: 0px auto;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+/************************************************AUTHORSSSS APPRECIATIONNN*******************************/
+.fourth-container {
+  background-color: #f7efe5;
+  height: 120vh;
+}
+.authors-content {
+  margin: 50px 170px;
+}
+.authors-content h2 {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-family: "PT Serif", serif;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.authors-content p {
+  font-size: 20px;
+  line-height: 0.5in;
+  text-indent: 5%;
+  text-align: justify;
+}
+/************************************************MAXIM*******************************/
+.maxim-contents {
+  height: 140vh;
+  background-color: #dddddd;
+}
+.maxim-description {
+  margin: 0px 170px;
+  padding-top: 80px;
+}
+.maxim-description h2 {
+  font-size: 40px;
+  font-family: "PT Serif", serif;
+  text-decoration: underline;
+}
+.maxim-description h4 {
+  padding-top: 50;
+  font-size: 30px;
+  text-align: justify;
+  line-height: 0.5in;
+  font-weight: 400;
+}
+.maxim-contents i {
+  color: #727479;
+  padding: 0px 20px;
+}
+.maxim-contents p {
+  font-style: italic;
+  text-align: right;
+  padding-top: 8px;
+  font-size: 20px;
+}
+.maxim-contents h3 {
+  text-align: center;
+  margin-top: 130px;
+  font-size: 35px;
+  font-family: "PT Serif", serif;
+  font-weight: 500;
+}
+.gallery {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+.images {
+  display: flex;
+  width: 100%;
+}
+.images img {
+  height: 400px;
+  width: 100%;
+  transition: all 0.15s ease;
+  border-radius: 25px;
+}
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.dots label {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid #494848;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover {
+  background-color: #909090;
+  border: 3px solid #909090;
+}
+#img1:checked ~ .m1 {
+  margin-left: 0;
+  border-radius: 25px;
+}
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+  border-radius: 25px;
+}
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+  border-radius: 25px;
+}
+#img4:checked ~ .m4 {
+  margin-left: -300%;
+  border-radius: 25px;
+}
+#img5:checked ~ .m5 {
+  margin-left: -400%;
+  border-radius: 25px;
+}
+#img6:checked ~ .m6 {
+  margin-left: -500%;
+  border-radius: 25px;
+}
